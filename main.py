@@ -29,7 +29,7 @@ def main():
         else:
             print(f"getrecords returned zero records")
 
-
+# get failed batch from SQS
 def retrieve_failed_batch():
 
     sqs_response = sqs_client.receive_message(
